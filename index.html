@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gourmet City — Restaurant à volonté</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <a href="#accueil" class="logo">Gourmet City</a>
+  <nav class="icones">
+    <a href="#apropos"><img src="m.png" alt="maison" class="m"></a>
+    <a href="#carte"><img src="me.png" alt="menu" class="me"></a>
+    <a href="#contact"><img src="i.png" alt="info" class="info"></a>
+    <a href="#reservation"><img src="r.png" alt="reserver" class="r"></a>
+  </nav>
+
+
+<div class="hero" id="accueil">
+  <div>
+    <div class="tag">Restaurant à volonté · Drancy</div>
+    <h1 class="titre-jeu">La qualité<br>d' la <span>cuisine</span>,<br>sans premium.</h1>
+  </div>
+  <div class="hero-droite">
+    <div class="stats">
+      <div><strong>24.90€</strong><span>pour les adultes </span></div>
+      <div><strong>13.90€</strong><span>pour les enfants </span></div>
+      <div><strong>6.90€</strong><span>en doggy bag</span></div>
+    </div>
+  </div>
+</div>
+
+<section id="apropos">
+  <div class="entete">
+    <div><small>La maison</small><h2 class="titre-jeu">MANGEZ À VOTRE FAÇON.</h2></div>
+  </div>
+  <div class="apropos-grille">
+    <div>
+      <p class="grand">Fondé par le chef Bryan, Gourmet City vous invite à faire le tour du monde à volonté, <br> <em>en toute simplicité</em>.</p>
+    </div>
+    <div>
+      <div class="chiffres">
+        <div><strong>À VOLONTÉ</strong><span>Formule tout compris</span></div>
+        <div><strong>TOUR DU MONDE</strong><span>Plats et spécialités</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="carte">
+  <div class="entete">
+<h2 class="titre-jeu">Nos assiettes.</h2></div>
+  </div>
+  <div class="carte">
+    <div class="carte-col">
+      <h3>Cuisine du monde</h3>
+      <div class="plat"><div><strong>Asiatique</strong><small>Sushis, poulets frits, nems, riz sauté, nouilles</small></div><span class="prix"></span></div>
+      <div class="plat"><div><strong>Américaine</strong><small>Burgers, tacos, nachos, ribs</small></div><span class="prix"></span></div>
+      <div class="plat"><div><strong>Italienne</strong><small>Pâtes, pizzas, risotto, plats traditionnels</small></div><span class="prix"></span></div>
+    </div>
+    <div class="carte-col">
+      <h3>Desserts</h3>
+      <div class="plat"><div><strong>Pâtisseries</strong><small>Gâteaux et viennoiseries du monde</small></div><span class="prix"></span></div>
+      <div class="plat"><div><strong>Fruits frais</strong><small>Fraises, mangues, ananas etc..</small></div><span class="prix"></span></div>
+      <div class="plat"><div><strong>Glace</strong><small>Vanille, chocolat, fraise etc..</small></div><span class="prix"></span></div>
+    </div>
+    <div class="carte-col">
+      <h3>Boissons</h3>
+      <div class="plat"><div><strong>SODAS ET JUS</strong><small>Coca, Fanta, jus d’orange, jus de pomme</small></div><span class="prix"></span></div>
+      <div class="plat"><div><strong>EAUX ET THÉS</strong><small>Eau plate, eau gazeuse, thé glacé</small></div><span class="prix"></span></div>
+      <div class="plat"><div><strong>CAFÉS</strong><small>Expresso, café allongé, cappuccino</small></div><span class="prix"></span></div>
+    </div>
+  </div>
+</section>
+
+<section id="reservation" style="padding-top:0">
+  <div class="resa">
+    <div class="entete">
+      <div><h2 class="titre-jeu">Une table<br>pour vous.</h2></div>
+    </div>
+    <form onsubmit="event.preventDefault(); this.querySelector('button').textContent='Demande envoyée !';">
+      <div><label for="nom">Nom</label><input id="nom" type="text" required></div>
+      <div><label for="tel">Téléphone</label><input id="tel" type="tel" required></div>
+      <div><label for="date">Date</label><input id="date" type="date" required></div>
+      <div><label for="heure">Heure</label><select id="heure"><option>19h00</option><option>19h30</option><option>20h00</option><option>20h30</option><option>21h00</option></select></div>
+      <div class="plein"><label for="couverts">Nombre de couverts</label><select id="couverts"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div>
+      <div class="plein"><label for="message">Message (optionnel)</label><textarea id="message"></textarea></div>
+      <div class="plein"><button type="submit">Envoyer ma demande</button></div>
+    </form>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="entete">
+   
+    <h2 class="titre-jeu">Nous trouver.</h2></div>
+  </div>
+  <div class="contact">
+    <div><h3>Adresse</h3><p>12 avenue Maxime Click<br>93700 Drancy</p></div>
+    <div><h3>Téléphone</h3><p>01 32 67 87 45</p></div>
+    <div><h3>Horaires</h3><p>Dim. et lun. : fermé<br>Mar. – sam. · 12h–14h, 19h–22h30</p></div>
+  </div>
+</section>
+
+<footer>
+  <p>Créé par Tarzan , © 2026 Tous droits réservés</p>
+</footer>
+
+  <style>
+    :root {
+      --nuit: #0011ff;
+      --violet: #bd43f5;
+      --rose: #ff2e97;
+      --orange: #ff9a5a;
+      --cyan: #00f0ff;
+      --jaune: #dbee2c;
+      --blanc: #fff6fb;
+      --gris: #d8b8ec;
+      --ligne: rgba(0,240,255,0.35);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: linear-gradient(180deg, var(--nuit) 0%, var(--violet) 35%, var(--rose) 70%, var(--orange) 100%);
+      background-attachment: fixed;
+      color: var(--blanc);
+      font-family: 'Inter', Arial, sans-serif;
+      font-size: 16px; line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+  
+    .titre-jeu {
+      font-family: 'Anton', Impact, sans-serif;
+      text-transform: uppercase;
+      font-style: italic;
+      letter-spacing: 0.01em;
+      line-height: 0.95;
+      color: var(--blanc);
+      text-shadow: 3px 3px 0 var(--rose), 0 0 18px rgba(0,240,255,0.6);
+    }
+     
+    .icones {
+      display: flex;
+      flex-direction: row;   
+      gap: 35px;             
+      flex-wrap: wrap;   
+      position: absolute;
+      right: 50px;
+      top: 25px;
+    }
+  
+    header { position: fixed; top: 0; left: 0; right: 0; z-index: 10; display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 5%; background: #0011ff; backdrop-filter: blur(10px); border-bottom: 1px solid var(--ligne); }
+    .logo { font-family: 'Anton', Impact, sans-serif; font-style: italic; text-transform: uppercase; font-size: 6.0rem; letter-spacing: 0.02em; color: var(--jaune); text-shadow: 2px 2px 0 var(--rose); position:absolute;  left: 620px; top: 50px; }
+    nav { display: flex; gap: 2rem; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; }
+    nav a { position: relative; transition: color .25s; }
+    nav a:hover { color: var(--cyan); }
+    .btn-nav { padding: 0.6rem 1.2rem; background: var(--rose); color: #fff; font-style: italic; transform: skewX(-8deg); box-shadow: 0 0 14px rgba(255,46,151,0.7); }
+    .btn-nav:hover { color: #fff; background: var(--cyan); color: var(--nuit); }
+  
+  
+    .hero { min-height: 100vh; display: grid; grid-template-columns: 1.1fr 0.9fr; align-items: end; padding: 9rem 5% 4rem; gap: 3rem; }
+    .tag { display: inline-block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; color: var(--cyan); margin-bottom: 1.5rem; border: 1px solid var(--cyan); padding: 0.4rem 0.9rem; transform: skewX(-8deg); }
+    .hero h1 { font-size: clamp(4rem, 11vw, 9rem); }
+    .hero h1 span { color: var(--jaune); }
+    .hero-droite { padding-bottom: 1rem; }
+    .hero-droite p { color: var(--gris); font-size: 1.1rem; max-width: 26rem; margin-bottom: 2rem; position: absolute; top: 580px; }
+    .boutons { display: flex; gap: 0.8rem; flex-wrap: wrap; }
+    .btn { padding: 1rem 1.8rem; font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.08em; border: 2px solid var(--cyan); color: var(--cyan); transform: skewX(-8deg); transition: all .25s; }
+    .btn.plein { background: var(--cyan); color: var(--nuit); box-shadow: 0 0 22px rgba(0,240,255,0.6); }
+    .btn.plein:hover { background: var(--jaune); border-color: var(--jaune); }
+    .btn:not(.plein):hover { background: var(--cyan); color: var(--nuit); }
+    .btn > span, .btn-nav > span { display: inline-block; transform: skewX(8deg); }
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--ligne); margin-top: 3rem; padding-top: 2rem; position: absolute; top: 500px; right : 200px; display: flex; gap: 60px; flex-wrap: wrap;  }
+    .stats div strong { display: block; font-family: 'Anton', Impact, sans-serif; font-size: 2rem; font-weight: 400; color: var(--jaune); }
+    .stats div span { font-size: 0.8rem; color: var(--gris); text-transform: uppercase; letter-spacing: 0.08em; }
+  
+    section { padding: 7rem 5%; }
+    .entete { display: flex; justify-content: space-between; align-items: end; border-top: 3px solid var(--cyan); padding-top: 1.2rem; margin-bottom: 3.5rem; gap: 2rem; flex-wrap: wrap; }
+    .entete small { font-size: 0.8rem; font-weight: 700; color: var(--cyan); text-transform: uppercase; letter-spacing: 0.2em; }
+    .entete h2 { font-size: clamp(2.8rem, 6vw, 4.8rem); margin-top: 0.6rem; }
+    .entete p { color: var(--gris); max-width: 22rem; }
+  
+   
+    .apropos-grille { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+    .apropos-grille .grand { font-size: clamp(1.6rem, 3vw, 2.3rem); font-weight: 600; line-height: 1.25; letter-spacing: -0.01em; }
+    .apropos-grille .grand em { font-style: normal; color: var(--jaune); }
+    .apropos-grille p { color: var(--gris); margin-bottom: 1rem; }
+    .chiffres { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 2rem; }
+    .chiffres div { padding: 1.6rem; border: 2px solid var(--cyan); background: #FFFFFF00; box-shadow: inset 0 0 20px rgba(0,240,255,0.15); }
+    .chiffres div:nth-child(2) { border-color: var(--rose); box-shadow: inset 0 0 20px rgba(255,46,151,0.2); }
+    .chiffres strong { font-family: 'Anton', Impact, sans-serif; font-size: 2.4rem; font-weight: 400; display: block; color: var(--jaune); }
+    .chiffres span { font-size: 0.8rem; color: var(--gris); text-transform: uppercase; letter-spacing: 0.08em; }
+  
+  
+    .carte { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
+    .carte-col { background: #FFFFFF00; border: 2px solid var(--cyan); padding: 2rem; transition: transform .3s, box-shadow .3s; }
+    .carte-col:nth-child(2) { border-color: var(--rose); }
+    .carte-col:nth-child(3) { border-color: var(--jaune); }
+    .carte-col:hover { transform: translateY(-6px); box-shadow: 0 0 30px rgba(0,240,255,0.35); }
+    .carte-col h3 { font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 2rem; text-transform: uppercase; font-style: italic; margin-bottom: 1.5rem; color: var(--cyan); }
+    .carte-col:nth-child(2) h3 { color: var(--rose); }
+    .carte-col:nth-child(3) h3 { color: var(--jaune); }
+    .plat { padding: 1rem 0; border-top: 1px solid rgba(255,255,255,0.15); display: flex; justify-content: space-between; gap: 1rem; }
+    .plat:first-of-type { border-top: none; padding-top: 0; }
+    .plat strong { display: block; font-weight: 700; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.03em; }
+    .plat small { color: var(--gris); font-size: 0.85rem; }
+    .plat .prix { font-family: 'Anton', Impact, sans-serif; font-size: 1.2rem; white-space: nowrap; color: var(--jaune); }
+  
+    .resa { background: #FFFFFF00; border: 2px solid var(--rose); box-shadow: 0 0 40px rgba(255,46,151,0.4); padding: 4rem; margin: 0 5%; }
+    .resa .entete { border-top-color: var(--rose); }
+    .resa .entete p { color: var(--gris); }
+    .resa .entete small { color: var(--rose); }
+    form { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 2.5rem; }
+    form .plein { grid-column: 1 / -1; }
+    label { display: block; font-size: 0.75rem; font-weight: 700; color: var(--cyan); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.4rem; }
+    input, select, textarea { width: 100%; background: transparent; border: none; border-bottom: 2px solid var(--gris); color: var(--blanc); padding: 0.6rem 0; font-family: inherit; font-size: 1rem; }
+    input:focus, select:focus, textarea:focus { outline: none; border-bottom-color: var(--cyan); }
+    select option { color: #111; }
+    textarea { min-height: 80px; resize: vertical; }
+    form button { justify-self: start; padding: 1rem 2.4rem; background: var(--jaune); color: var(--nuit); border: none; font-family: 'Anton', Impact, sans-serif; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em; cursor: pointer; transform: skewX(-8deg); box-shadow: 4px 4px 0 var(--rose); transition: transform .2s; }
+    form button:hover { transform: skewX(-8deg) translate(-2px,-2px); }
+    .note { font-size: 0.8rem; color: var(--gris); margin-top: 1.5rem; }
+  
+  
+    .contact { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    .contact div { border-top: 3px solid var(--rose); padding-top: 1.2rem; }
+    .contact h3 { font-size: 0.8rem; font-weight: 700; color: var(--cyan); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 0.6rem; }
+    .contact p { font-size: 1.1rem; font-weight: 600; }
+  
+    footer { padding: 3rem 5%; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; font-size: 1rem; color: var(--gris); border-top: 1px solid var(--ligne); position:absolute; left: 700px; }
+  
+  
+    @media (max-width: 900px) {
+      .hero, .apropos-grille { grid-template-columns: 1fr; }
+      .carte { grid-template-columns: 1fr; }
+      .contact { grid-template-columns: 1fr; }
+      .resa { padding: 2.5rem 1.5rem; }
+      form { grid-template-columns: 1fr; }
+      nav a:not(.btn-nav) { display: none; }
+      section { padding: 5rem 5%; }
+    }
+  </style>
+  
+</body>
+</html>
